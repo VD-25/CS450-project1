@@ -8,6 +8,7 @@ import pandas as pd
 df = pd.read_csv('mxmh_survey_results.csv', encoding='utf-8')
 
 app = dash.Dash(__name__)
+server = app.server
 
 disorders = ['Anxiety', 'Depression', 'Insomnia', 'OCD']
 freqs = ['Never', 'Rarely', 'Sometimes', 'Very frequently']
